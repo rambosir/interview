@@ -15,7 +15,7 @@
 
     <build>
 
-        <!-- 这样也可以把所有的xml文件，打包到相应位置。 -->
+
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
