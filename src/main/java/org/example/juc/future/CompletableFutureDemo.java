@@ -1,4 +1,4 @@
-package org.example.juc;
+package org.example.juc.future;
 
 import java.util.concurrent.*;
 import org.junit.Test;
