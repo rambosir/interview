@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @program interview
  * @date 2023-06-16 13:51
  */
-public class AtomicIntegerTest {
+public class AtomicIntegerDemo {
 
   public static void main(String[] args) {
     coutdownlatch();
