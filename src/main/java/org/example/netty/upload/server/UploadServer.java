@@ -8,6 +8,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import org.example.netty.upload.codes.UploadDecoder;
 import org.example.netty.upload.handler.UploadServerHandler;
 
 /**
@@ -35,6 +36,7 @@ public class UploadServer {
               new ChannelInitializer<SocketChannel>() { // (4)
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {
+                  ch.pipeline().addLast(new UploadDecoder());
                   ch.pipeline().addLast(new UploadServerHandler());
                 }
               })
