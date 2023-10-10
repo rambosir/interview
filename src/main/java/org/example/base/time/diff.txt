@@ -1,0 +1,12 @@
+Period 包含年数，月数，天数，而Duration 只包含秒，纳秒。
+Period 只能返回年数，月数，天数；
+Duration可以返回天数，小时数，分钟数，毫秒数等
+
+
+2 个类比较的精度不不同。
+Period 包含年数，月数，天数，而 Duration 只包含秒，纳秒。
+Period 只能返回年数，月数，天数；Duration可以返回天数，小时数，分钟数，毫秒数等。
+
+2 个类可以使用的类型不同。
+Period 只能使用 LocalDate，换句话说 Period 只能使用 Date 对象。
+Duration 是可以使用 Instant 对象的。
